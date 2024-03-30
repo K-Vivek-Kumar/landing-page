@@ -1,0 +1,74 @@
+/* Unique Pricing component styles */
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background: linear-gradient(
+    to bottom right,
+    var(--primary-clr),
+    var(--second-clr)
+  );
+  color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+  max-width: calc(33.33% - 40px); /* Adjust the width as needed */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-card h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 36px;
+  margin: 20px 0;
+}
+
+.price span {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 15px 0;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--text-clr);
+  color: var(--second-clr);
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: var(--primary-clr);
+}
+
+/* Media Query for wide laptop screens */
+@media screen and (min-width: 1440px) {
+  .pricing-card {
+    max-width: calc(33.33% - 40px); /* Adjust the width as needed */
+  }
+}
